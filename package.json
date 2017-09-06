@@ -1,0 +1,31 @@
+{
+  "name": "postcss-class-postfix",
+  "description": "Postfix class selectors",
+  "author": "John Otander",
+  "version": "0.1.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "ava -v"
+  },
+  "repository": "johnotander/postcss-class-postfix",
+  "keywords": [
+    "class",
+    "css",
+    "postfix",
+    "postcss",
+    "postcss-plugin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "class-postfix": "^1.0.1",
+    "has-class-selector": "^1.0.0",
+    "is-present": "^1.0.0",
+    "postcss": "^5.0.19"
+  },
+  "devDependencies": {
+    "ava": "*"
+  }
+}
