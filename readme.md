@@ -14,34 +14,18 @@ npm install --save postcss-class-postfix
 var postcss = require('postcss')
 var classPostfix = require('postcss-class-postfix')
 
-postcss([ classPostfix('-foobar') ]).process(myCss).css
+postcss([ classPostfix('-bar') ]).process(myCss).css
 ```
 
 #### Input
 
 ```css
-.foo.bar {
+.foo #baz {
   color: tomato;
 }
 ```
 
 #### Output
-
-```css
-.foo #bar {
-  color: tomato;
-}
-```
-
-
-###### Using custom options
-
-```javascript
-var postcss = require('postcss')
-var classPostfix = require('postcss-class-postfix')
-
-postcss([ classPostfix('-bar') ]).process(myCss).css
-```
 
 ```css
 .foo-bar #baz {
